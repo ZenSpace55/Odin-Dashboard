@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+.masterScreen{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.leftUIbar{
+    background-color: blue;
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.headerBar{
+    background-color: grey;
+    height: 10em;
+}
+
+.mainContent{
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.leftDivIcon{
+    width: 32px;
+    height: 32px;
+}
+
+.leftLink{
+    display: flex;
+    align-items: center;
+}
