@@ -2,6 +2,7 @@
 
 body{
     margin: 0;
+    background-color: rgb(184, 187, 196);
 }
 
 .masterScreen{
@@ -27,27 +28,28 @@ body{
 .headerBar{
     background-color: rgb(255, 255, 255);
     height: 8em;
+    box-shadow: rgba(0,0,0,.15) 0px 10px 15px -3px, rgba(0,0,0,.1) 0px 4px 6px -2px;
 }
 
 .mainContent{
-    background-color: rgb(228, 213, 185);
     flex-grow: 1;
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
-    margin: 1em .5em 1em .5em;
+    margin: 2em .5em 3em .5em;
 }
 
 .boxTitleText{
     position: absolute;
-    margin-top: -1.2em;
+    margin-top: -.8em;
+    margin-left: 1em;
     font-size: x-large;
     font-weight: 700;
 }
 
 .projectsBox{
-    background-color: red;
+    /*background-color: rgb(255, 255, 255);*/
     grid-row: span 2;
 }
 
@@ -56,16 +58,53 @@ body{
     border-radius: 5px;
     height: 90%;
     margin: 1em;
+    border-left: 12px;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-style: solid;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.3), 0 10px 20px 0 rgba(0,0,0,.25);
+    border-color: rgb(248, 162, 64);
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsHeader{
+    margin: 1em;
+    margin-bottom: .25em;
+    font-weight: 700;
+    font-size: large;
+}
+.projectsText{
+    margin: 1em;
+    margin-top: 0;
 }
 
 .announcementsBox{
-    background-color: brown;
+    /*background-color: brown;*/
     grid-row: span 3;
 }
 
+.announcementsCard{
+    background-color: white;
+    border-radius: 5px;
+    height: 90%;
+    margin: 1em;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.3), 0 10px 20px 0 rgba(0,0,0,.25);
+}
+
 .trendingBox{
-    background-color: royalblue;
+    /*background-color: royalblue;*/
     grid-row: span 4;
+    margin-bottom: -12px;
+}
+
+.trendingCard{
+    background-color: white;
+    border-radius: 5px;
+    height: 90%;
+    margin: 1em;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.3), 0 10px 20px 0 rgba(0,0,0,.25);
 }
 
 .leftDivIcon{
